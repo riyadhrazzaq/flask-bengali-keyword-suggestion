@@ -2,19 +2,21 @@
 <html>
 
 <head>
-    <title>Sentiment Classification of Reviews</title>
+    <title>Tag Suggestions for Bengali Documents</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 
 <body>
-    <h2>Your Review</h2>
-    <div style="font-family: sans-serif;">{{ content }}</div>
-    <h2>Prediction</h2>
-    <div style="font-family: sans-serif;" >This review is <strong>{{ prediction }}</strong> with {{ probability }}% probability</div>
+    <h2>Title</h2>
+    <div style="font-family: sans-serif;">{{ title }}</div>
+    <h2>Content</h2>
+    <div style="font-family: sans-serif;">{{ text }}</div>
+    <h2>Tags</h2>
+    <div style="font-family: sans-serif;" >Tags are: <strong>{{ tags }}</strong></div>
     <div id='button'>
         <form action="/">
-            <input class="nes-btn" type=submit value='write another review' style="font-size: 0.6em;">
+            <input class="nes-btn" type=submit value='another doc' style="font-size: 0.6em;">
         </form>
     </div>
     <div id="button">
@@ -22,8 +24,7 @@
             <input class="nes-btn" type="submit" value="Source on Github" style="font-size: 0.6em;">
         </form>
     </div>
-    <div id="nb" style="font-size: smaller; font-family: sans-serif;">This service is still in development,
-        and only performs well on product reviews</div>    
+    <div id="nb" style="font-size: smaller; font-family: sans-serif;">for Thesis & Glory!</div>    
 </body>
 
 </html>

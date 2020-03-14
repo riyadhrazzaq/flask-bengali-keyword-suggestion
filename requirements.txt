@@ -1,7 +1,5 @@
-flask
-nltk
-tensorflow
 request
 scikit-learn
 wtforms
 gunicorn
+editdistance
