@@ -1,56 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Geo&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Press+Start+2P&display=swap');
+div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+div {
     text-align: justify;
-    width: 600px;
-    margin: 0;
+    width: 60%;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -0%);
-}
-/*
-#button{
-    margin: 20px;
-}
-.button{
-    padding-top: 60px;
-}
-#review{
-    width: calc(100% - 8px);
-    padding: 1rem;
-}
-h2,form,h3{
-    font-family: 'Geo', sans-serif;
+    left: 50%;  
+    transform: translate(-50%, 50%); 
     text-align: center;
+    margin: 5px;
+    border: 2px cadetblue dashed;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+label{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+}
+#title{
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+#text{
+  
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 100%;
+    height: 200px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+    resize: none;
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
     font-size: 2em;
 }
-.nes-btn{
-    border-image-slice: 2;
-    border-image-width: 2;
-    border-image-repeat: stretch;
-    border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="rgb(33,37,41)" /></svg>');
-    border-image-outset: 2;
-    position: relative;
-    display: inline-block;
-    padding: 6px 8px;
-    margin: 4px;
-        margin-bottom: 4px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: #212529;
-    background-color: #fff;
-    font-family: 'Geo',sans-serif;
-
-}
-.nes-btn:hover{
-    color:white;
-    background-color: rgb(56, 56, 56);
-}
-dd{
-    margin-left: 0px;
-}
-*/
