@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 div:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3);
 }
 
 div {
@@ -8,7 +9,7 @@ div {
     width: 60%;
     position: absolute;
     left: 50%;  
-    transform: translate(-50%, 50%); 
+    transform: translate(-50%, 10%); 
     text-align: center;
     margin: 5px;
     border: 2px cadetblue dashed;
@@ -17,7 +18,7 @@ div {
     transition: 0.3s;
 }
 label{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.5em;
 }
 #title{
@@ -26,19 +27,40 @@ label{
   padding: 12px 5px;
   margin: 8px 0;
   box-sizing: border-box;
+  font-size: 1.2em;
   
 }
 #text{
-  
+  font-size: 1.2em;
   padding-left: 5px;
   padding-top: 5px;
   width: 100%;
-    height: 200px;
+  height: 400px;
   margin: 8px 0px;
   box-sizing: border-box;
-    resize: none;
+  resize: none;
 }
 h2{
     font-family: 'Press Start 2P', cursive;
     font-size: 2em;
+}
+input[type="submit"]{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #5f9ea0; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover{
+  width: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
