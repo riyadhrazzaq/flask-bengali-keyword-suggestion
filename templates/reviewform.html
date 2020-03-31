@@ -7,12 +7,14 @@
 </head>
 
 <body>
-    <div>
+    <div id="shob">
         <h2>/Tag Suggestion Tool/</h2>
 	    <form method="POST" action="/results">
 		    {{ form.title.label }} {{ form.title() }}
 		    <br/>
-            {{ form.text.label }} {{ form.text() }}
+           <!-- {{ form.text.label }} {{ form.text() }} */ -->
+           <label for="text">Content</label>
+            <textarea id="text" name="text"></textarea>
 		    <input type="submit" value="Continue">
         </form>
     </div>
