@@ -3,24 +3,24 @@
 
 <head>
     <title>Tag Suggestions for Bengali Documents</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_result.css') }}">
 
 </head>
 
 <body>
     <h2>Title</h2>
-    <div style="font-family: sans-serif;">{{ title }}</div>
+    <div >{{ title }}</div>
     <h2>Content</h2>
-    <div style="font-family: sans-serif;">{{ text }}</div>
+    <div >{{ text }}</div>
     <h2>Tags</h2>
-    <div style="font-family: sans-serif;" >Tags are: <strong>{{ tags }}</strong></div>
+    <div >{{ tags }}</div>
     <div id='button'>
         <form action="/">
             <input class="nes-btn" type=submit value='another doc' style="font-size: 0.6em;">
         </form>
     </div>
     <div id="button">
-        <form action="https://github.com/riyadhrazzaq/flask-sentiment-classifier.git" target="_blank">
+        <form action="https://github.com/riyadhrazzaq/flask-bengali-keyword-suggestion.git" target="_blank">
             <input class="nes-btn" type="submit" value="Source on Github" style="font-size: 0.6em;">
         </form>
     </div>

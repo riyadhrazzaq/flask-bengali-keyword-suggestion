@@ -113,7 +113,11 @@ def suggest(*article):
     tag_prob = dict([(labels[i], prob) for i, prob in enumerate(pred_labels.tolist())])
     pred = sorted(tag_prob.items(), key=lambda kv: kv[1],reverse=True)[:3]
     tag_proper = [w[0] for w in pred]
-    return temp+tag_proper
+    l = temp+tag_proper
+    s = ","
+    s = s.join([w for w in l])
+    return s
+
 
 class MyForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
