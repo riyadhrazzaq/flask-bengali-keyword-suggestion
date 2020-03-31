@@ -1,4 +1,5 @@
 from flask_wtf import FlaskForm
+from flask_ngrok import run_with_ngrok
 from wtforms import StringField, IntegerField
 from flask import render_template,Flask, request
 from wtforms.validators import DataRequired
@@ -19,7 +20,6 @@ from tensorflow.keras.models import load_model
 
 # load LSTM model
 model = load_model("./data/lstm_model_100.h5")
-model._make_predict_function()
 # tokenizer load
 with open('./data/prothom_alo_100_tk.pickle', 'rb') as handle:
     tk = pickle.load(handle)
@@ -37,6 +37,9 @@ stopword_bn = [i.strip() for i in lines]
 pattern = re.compile(u'[(.$)):]|[,।‘’-]|\s\s+')
 
 app = Flask(__name__)
+
+run_with_ngrok(app) 
+
 app.config['SECRET_KEY'] = 'thesis2020'
 run = 0
 def rmv_punc(text):
@@ -136,4 +139,4 @@ def results():
     return render_template("reviewform.html", form=form)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

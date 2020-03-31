@@ -7,13 +7,16 @@
 </head>
 
 <body>
-	<h2>Form</h2>
-	<form method="POST" action="/results">
-		{{ form.title.label }} {{ form.title() }}
-		<br/>
-        {{ form.text.label }} {{ form.text() }}
-		<input type="submit" value="Go">
-</form>
+    <div>
+        <h2>/Tag Suggestion Tool/</h2>
+	    <form method="POST" action="/results">
+		    {{ form.title.label }} {{ form.title() }}
+		    <br/>
+            {{ form.text.label }} {{ form.text() }}
+		    <input type="submit" value="Continue">
+        </form>
+    </div>
+	
 </body>
 
 </html>
